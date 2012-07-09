@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1341861607 source:/home/tenshi/Documents/Projects/first/main.cpp
+	<iostream>
+	"include/MyCharIterator.h"
+
+1341860954 /home/tenshi/Documents/Projects/first/include/MyCharIterator.h
+	"CharIterator.h"
+
+1341772173 /home/tenshi/Documents/Projects/first/include/CharIterator.h
+
+1341861695 source:/home/tenshi/Documents/Projects/first/src/MyCharIterator.cpp
+	<iostream>
+	"../include/MyCharIterator.h"
+
