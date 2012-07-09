@@ -3,13 +3,8 @@
 
 MyCharIterator::MyCharIterator(char* chars)
 {
-    _size = 0;
+    _size = sizeof(chars);
     _chars = chars;
-
-    for(int pos = 0; chars[pos] != '\0'; ++pos)
-    {
-        _size++;
-    }
 }
 
 char MyCharIterator::Current()
@@ -19,7 +14,7 @@ char MyCharIterator::Current()
 
 char MyCharIterator::Next()
 {
-    if(_currentPos < _size - 1)
+    if(_currentPos < _size)
     {
         ++_currentPos;
         return Current();

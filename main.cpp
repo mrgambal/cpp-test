@@ -6,6 +6,7 @@ using namespace std;
 int main()
 {
     char str[] = {'0', 'h', 'k', '8', '-', '\0'};
+
     MyCharIterator* _iter = new MyCharIterator(str);
 
     do
