@@ -12,3 +12,17 @@
 	<iostream>
 	"../include/MyCharIterator.h"
 
+1341938123 source:/srv/cpp-test/src/MyCharIterator.cpp
+	<iostream>
+	<algorithm>
+	"../include/MyCharIterator.h"
+
+1341938354 /srv/cpp-test/include/MyCharIterator.h
+	"CharIterator.h"
+
+1341932974 /srv/cpp-test/include/CharIterator.h
+
+1341936044 source:/srv/cpp-test/main.cpp
+	<iostream>
+	"include/MyCharIterator.h"
+
