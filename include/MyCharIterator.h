@@ -11,6 +11,20 @@ class MyCharIterator : public CharIterator
 
 public:
     MyCharIterator(char* chars);
+    MyCharIterator(const MyCharIterator& mci);
+    MyCharIterator& operator= (const MyCharIterator& mci)
+    {
+        char* new_chars = new char[mci._size];
+        std::copy(mci._chars, mci._chars + mci._size, new_chars);
+
+        delete[] _chars;
+
+        _chars = new_chars;
+        _size = mci._size;
+        _currentPos = mci._currentPos;
+
+        return *this;
+    }
     ~MyCharIterator();
 
     char Current();
