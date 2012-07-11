@@ -7,9 +7,10 @@ int main()
 {
     char str[] = {'0', 'h', 'k', '8', '-', '\0'};
 
+    cout << "Before constr: " << sizeof(str) << endl;
+    cout << "Before constr: " << str << endl;
     MyCharIterator* _i = new MyCharIterator(str);
     MyCharIterator _iter = *_i;
-
     do
     {
         cout << _iter.Current() << '\n';

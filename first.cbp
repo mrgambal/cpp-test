@@ -35,6 +35,7 @@
 		<Unit filename="include/CharIterator.h" />
 		<Unit filename="include/MyCharIterator.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/CharIterator.cpp" />
 		<Unit filename="src/MyCharIterator.cpp" />
 		<Extensions>
 			<envvars />
