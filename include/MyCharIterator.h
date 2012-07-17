@@ -10,7 +10,7 @@ class MyCharIterator : public CharIterator
     int _size;
 
 public:
-    MyCharIterator(char* chars);
+    MyCharIterator(char* chars, int size);
     MyCharIterator(const MyCharIterator& mci);
     MyCharIterator& operator= (const MyCharIterator& mci)
     {

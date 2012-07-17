@@ -2,12 +2,11 @@
 #include <algorithm>
 #include "../include/MyCharIterator.h"
 
-MyCharIterator::MyCharIterator(char* chars)
-    : _size(sizeof(chars)/sizeof(chars[0])), _chars(new char[sizeof(chars)/sizeof(chars[0])])
+MyCharIterator::MyCharIterator(char* chars, int size)
+    : _size(sizeof(size)), _chars(new char[size])
 {
-    std::cout << "In constr: " << sizeof(chars) << std::endl;
-    std::cout << "In constr: " << chars << std::endl;
-    std::copy(chars, chars + _size, _chars);
+    _size = size;
+    std::copy(chars, chars + _size + 1, _chars);
 }
 
 MyCharIterator::MyCharIterator(const MyCharIterator& mci)
@@ -45,7 +44,7 @@ char MyCharIterator::First()
 
 char MyCharIterator::Last()
 {
-    _currentPos = _size - 1;
+    _currentPos = _size - 2;
     return Current();
 }
 

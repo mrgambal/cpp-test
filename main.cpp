@@ -9,8 +9,10 @@ int main()
 
     cout << "Before constr: " << sizeof(str) << endl;
     cout << "Before constr: " << str << endl;
-    MyCharIterator* _i = new MyCharIterator(str);
+
+    MyCharIterator* _i = new MyCharIterator(str, sizeof(str));
     MyCharIterator _iter = *_i;
+
     do
     {
         cout << _iter.Current() << '\n';
@@ -22,8 +24,6 @@ int main()
     cout << "Next from last: " << _iter.Next() << '\n';
 
     delete _i;
-
-    cout << str[0];
 
     return 0;
 }
